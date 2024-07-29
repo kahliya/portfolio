@@ -1,0 +1,21 @@
+#navbar {
+  justify-content: space-between;
+}
+
+#navbar nav a {
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+
+  transition: background-color 500ms;
+}
+
+#navbar nav a:hover {
+  background-color: var(--accent-2);
+}
+
+#site-title {
+  margin-right: 1rem;
+  border-right: 3px solid var(--accent-2);
+}

@@ -1,0 +1,23 @@
+/* More intuitive box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Ew default margins/paddings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Improve text rendering & line height */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Fix media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+

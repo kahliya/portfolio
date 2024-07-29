@@ -1,0 +1,32 @@
+:root {
+  --main-color: #F5F9FC;
+  --sub-color: #FFFFFF;
+  --accent-1: #121B5D;
+  --accent-2: #B4DBEA;
+}
+
+.bg-main {
+  background-color: var(--main-color);
+}
+.bg-sub {
+  background-color: var(--sub-color);
+}
+.bg-accent-1 {
+  background-color: var(--accent-1);
+}
+.bg-accent-2 {
+  background-color: var(--accent-2);
+}
+
+.text-main {
+  color: var(--main-color);
+}
+.text-sub {
+  color: var(--sub-color);
+}
+.text-accent-1 {
+  color: var(--accent-1);
+}
+.text-accent-2 {
+  color: var(--accent-2);
+}
