@@ -21,10 +21,12 @@ const { pageTitle } = Astro.props
 		<title>{pageTitle}</title>
 	</head>
 	<body class="bg-sub">
-    <main class="bg-main">
+    <div id="page-wrapper" class="bg-main">
       <Navbar />
-      <h1 class="text-accent-1">{pageTitle}</h1>
-      <slot />
-    </main>
+      <main>
+        <h1 class="text-accent-1">{pageTitle}</h1>
+        <slot />
+      </main>
+    </div>
 	</body>
 </html>
