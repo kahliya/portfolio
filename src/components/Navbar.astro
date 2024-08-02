@@ -1,5 +1,9 @@
 ---
+import { Image } from 'astro:assets';
+
 import '../css/navbar.css';
+import githubSvg from '../images/github.svg';
+import linkedinSvg from '../images/linkedin.svg';
 
 const siteTitle = "Alex | AKA. Kahlia"
 ---
@@ -13,7 +17,9 @@ const siteTitle = "Alex | AKA. Kahlia"
       <a href="/test">Test</a>
     </nav>
   </div>
-  <div class="flex">
+  <div id="navbar-right-section">
+    <Image src={githubSvg} alt="github" width="30" height="30"/>
+    <Image src={linkedinSvg} alt="github" width="30" height="30"/>
     <a>Hire me</a>
   </div>
 </div>
