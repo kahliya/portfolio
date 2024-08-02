@@ -1,13 +1,29 @@
+/* Layout CSS */
 html {
+  font-size: 62.5%;
+
   font-family: 'Roboto Slab', sans-serif;
+  font-weight: 350;
 }
 
 body {
   padding: 20px;
 }
 
-#page-wrapper {
+.page-wrapper {
   padding: 3.5rem;
+}
+
+.main-section {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-section {
+  margin-top: 10rem;
 }
 
 /* Generic widths */

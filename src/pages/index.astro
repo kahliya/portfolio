@@ -1,11 +1,23 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 
+import '../css/index.css';
+
 const pageTitle = "Index";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <div class="flex">
-    <h2 class="text-accent-1">Index Page Content</h2>
+  <div id="profile-section" class="sub-section">
+    <div>
+      put image here
+    </div>
+    <div>
+      <p id="main-header-text" class="text-accent-1">Hi, my name is <b>Alex</b>.</h2>
+      <p class="subtext text-accent-1">I am an <b>aspiring software engineer</b> from Singapore.</p>
+      <p class="subtext text-accent-1">You may also know me from my online alias, <span class="bg-accent-2">Kahlia</span>.</p>
+    </div>
+  </div>
+  <div class="sub-section">
+    <h1 class="text-accent-1">Index Page Content</h2>
   </div>
 </BaseLayout>
 
