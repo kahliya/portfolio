@@ -10,6 +10,11 @@ body {
   padding: 20px;
 }
 
+svg {
+  width: 25px;
+  height: 25px;
+}
+
 .page-wrapper {
   padding: 3.5rem;
 }

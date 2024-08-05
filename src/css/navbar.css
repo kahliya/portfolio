@@ -25,14 +25,14 @@
   transition: background-color 500ms;
 }
 
-#navbar a:hover {
+#navbar a:not(.svg-link):hover {
   background-color: var(--accent-2);
+}
+
+#navbar svg:hover {
+  fill: var(--accent-2);
 }
 
 #navbar-right-section {
   display: flex;
-
-  img {
-    margin-right: 1.5rem;
-  }
 }
