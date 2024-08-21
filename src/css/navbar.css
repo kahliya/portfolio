@@ -1,6 +1,8 @@
 #navbar {
   justify-content: space-between;
   font-size: 1.7rem;
+  position: sticky;
+  top: 2rem;
 }
 
 #navbar > div {
