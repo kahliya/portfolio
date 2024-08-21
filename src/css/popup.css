@@ -1,0 +1,21 @@
+.popup-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.popup {
+  position: absolute;
+  bottom: -85%;
+
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--accent-2);
+
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 200ms ease-in;
+}
+
+
+.popup-wrapper:hover .popup {
+  opacity: 1;
+}

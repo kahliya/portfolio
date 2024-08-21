@@ -1,9 +1,6 @@
 ---
-import { Image } from 'astro:assets';
-
 import '../css/navbar.css';
-import githubSvg from '../images/github.svg';
-import linkedinSvg from '../images/linkedin.svg';
+import '../css/popup.css';
 
 const siteTitle = "Alex | AKA. Kahlia"
 ---
@@ -11,10 +8,20 @@ const siteTitle = "Alex | AKA. Kahlia"
   <div class="flex w-50">
     <h4 id="site-title" class="w-25">{siteTitle}</h4>
     <hr />
-    <nav>
+    <nav class="flex">
       <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/test">Test</a>
+      <div class="popup-wrapper">
+        <a href="/about">About</a>
+        <div class="popup">
+          <p>Find out more about me!</p>
+        </div>
+      </div>
+      <div class="popup-wrapper">
+        <a href="/test">Test</a>
+        <div class="popup flex">
+          <p>test popup! test popup! test popup! test popup!</p>
+        </div>
+      </div>
     </nav>
   </div>
   <div id="navbar-right-section">
