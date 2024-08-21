@@ -1,9 +1,9 @@
 /* Layout CSS */
 html {
   font-size: 62.5%;
-
   font-family: 'Roboto Slab', sans-serif;
   font-weight: 350;
+  color: var(--accent-1);
 }
 
 body {
