@@ -2,13 +2,13 @@ import { NavLink } from "react-router";
 
 export const Navbar = () => {
   return (
-    <div className="flex gap-10">
+    <div className="flex p-6 gap-10">
       <div>KAHLIA-HOME</div>
-      <div className="flex flex-auto gap-3">
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/project">Project</NavLink>
+      <div className="flex flex-auto gap-5">
+        <NavLink to="/about">About me</NavLink>
+        <NavLink to="/project">Blog</NavLink>
       </div>
-      <div>CONTACT ME :D</div>
+      <div>Get in touch :)</div>
     </div>
   );
 }
