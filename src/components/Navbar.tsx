@@ -1,25 +1,33 @@
-import { NavLink } from "react-router";
+import { NavLink, type NavLinkProps } from "react-router";
 
-import githubIcon from '../assets/icon_github.svg';
-import linkedInIcon from '../assets/icon_linkedin.svg';
-import mailIcon from '../assets/icon_mail.svg';
+import GithubIcon from '../assets/icon_github.svg?react';
+import LinkedInIcon from '../assets/icon_linkedin.svg?react';
+import MailIcon from '../assets/icon_mail.svg?react';
 
-import '../styles/navbar.css';
 
 export const Navbar = () => {
+  const navLinkClassNames: NavLinkProps['className'] = ({ isActive }) => `text-slate-400 transition-colors duration-400 hover:text-zinc-800 ${isActive && "text-zinc-800 underline"}`;
+  const iconLinkClassNames = `flex items-center justify-center rounded-full size-10 hover:bg-blue-50 transition-colors duration-400 text-slate-400 hover:text-zinc-800`
+
   return (
-    <div className="flex items-center py-6 px-10 gap-10 font-medium">
+    <div className="flex items-center py-5 px-10 gap-10 font-medium">
       <div>KAHLIA-HOME</div>
       <div className="flex flex-auto gap-5">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">About me</NavLink>
-        <NavLink to="/blog">Blog</NavLink>
+        <NavLink to="/" className={navLinkClassNames}>Home</NavLink>
+        <NavLink to="/about" className={navLinkClassNames}>About me</NavLink>
+        <NavLink to="/blog" className={navLinkClassNames}>Blog</NavLink>
       </div>
-      <div className="flex items-center gap-5">
+      <div className="flex items-center gap-3">
         <div>Get in touch :)</div>
-        <img src={githubIcon} className="w-7" />
-        <img src={linkedInIcon} className="w-7" />
-        <img src={mailIcon} className="w-7" />
+        <a className={iconLinkClassNames}>
+          <GithubIcon className="w-6" />
+        </a>
+        <a className={iconLinkClassNames}>
+          <LinkedInIcon className="w-6" />
+        </a>
+        <a className={iconLinkClassNames}>
+          <MailIcon className="w-6" />
+        </a>
       </div>
     </div>
   );
