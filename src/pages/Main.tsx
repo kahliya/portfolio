@@ -7,8 +7,8 @@ export const Main = () => {
     <div className="rounded-md">
       <div className="flex flex-col">
         <Navbar />
-        <div className="flex justify-center py-25 bg-blue-50">
-          <div className="flex gap-25 items-center">
+        <div className="flex justify-center py-18 bg-blue-50">
+          <div className="flex gap-25 items-center max-w-5xl">
             <div className="flex flex-col gap-5">
               <p className="text-6xl/18 font-[Lora] font-semibold text-nowrap">Hello, my<br/>name is Alex</p>
               <p className="text-2xl font-light">
@@ -16,6 +16,14 @@ export const Main = () => {
               </p>
             </div>
             <img className="w-125 rounded-full object-cover aspect-square" src={homeImg} />
+          </div>
+        </div>
+        <div className="flex justify-center py-10">
+          <div className="flex flex-col gap-5 max-w-5xl">
+            <p className="text-6xl/18 font-[Lora] font-semibold text-nowrap">My projects</p>
+            <p className="text-2xl font-light">
+              put carousel here lel
+            </p>
           </div>
         </div>
       </div>

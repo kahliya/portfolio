@@ -7,7 +7,7 @@ import MailIcon from '../assets/icon_mail.svg?react';
 
 export const Navbar = () => {
   const navLinkClassNames: NavLinkProps['className'] = ({ isActive }) => `text-slate-400 transition-colors duration-400 hover:text-zinc-800 ${isActive && "text-zinc-800 underline"}`;
-  const iconLinkClassNames = `flex items-center justify-center rounded-full size-10 hover:bg-blue-50 transition-colors duration-400 text-slate-400 hover:text-zinc-800`
+  const iconLinkClassNames = `flex items-center justify-center rounded-full size-10 hover:bg-blue-50 transition-colors duration-400 text-slate-400 hover:text-zinc-800 cursor-pointer`
 
   return (
     <div className="flex items-center py-5 px-10 gap-10 font-medium">
